@@ -7,5 +7,7 @@ for($i=1;$i<=5;$i++){
 
     $imc=$peso/($altura*$altura);
 
-    echo "\n" . $nome . " tem peso " . $peso . "kg, altura " . $altura . "m e IMC " . $imc . ".\n\n";
+    printf("\n%s tem peso %dkg, altura %.2fm e IMC %.2f\n\n", $nome, $peso, $altura, $imc);
+
+    //printf muda o tipo na exibição, %f é float, %.2f exibe apena duas casas decimais do float
 }
